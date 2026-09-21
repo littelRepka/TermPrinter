@@ -15,7 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.termprinter.printer.PhotoPrinter;
 import com.example.termprinter.printer.TextPrinter;
+import com.example.termprinter.printer.XmlPrinter;
 import com.google.android.material.bottomappbar.BottomAppBar;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void xmlPrintButton(View view){
-
+        Intent intent = new Intent(MainActivity.this, XmlPrinter.class);
+        startActivity(intent);
+    }
+    public void photoPrintButton(View view){
+        Intent intent = new Intent(MainActivity.this, PhotoPrinter.class);
+        startActivity(intent);
     }
 }

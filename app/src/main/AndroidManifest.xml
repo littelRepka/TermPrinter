@@ -20,6 +20,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".printer.TextPrinter"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".printer.PhotoPrinter"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".printer.XmlPrinter"
+            android:exported="true">
+        </activity>
     </application>
+
 
 </manifest>
