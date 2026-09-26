@@ -63,6 +63,8 @@ public class TextPrinter extends AppCompatActivity {
             printer.addLine(text, false, false, false, 20 , PrinterManager.LEFT);
             printer.beginPrint();
             pause(false);
+            PrinterManager.PrintStep(20);
+            printer.cleanCache();
             PrinterManager.close();
         }catch (RemoteException e){
             System.out.println(e);
